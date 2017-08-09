@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Route, Switch} from 'react-router';
 
-import App from './pages/app';
-import Todo from './pages/todo';
+import App from '../pages/app';
+import Todo from '../pages/todo';
 
 class Routes extends Component {
     render() {

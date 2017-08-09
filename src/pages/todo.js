@@ -11,6 +11,7 @@ import {selectTodos} from '../modules/todo/selectors';
 import * as todoActions from '../modules/todo';
 
 import TodoItem from '../components/todo-item';
+import InputText from '../components/input-text';
 
 // Styles
 import './styles/App.css';
@@ -51,14 +52,14 @@ class TodoPage extends Component {
             <Layout className="App">
                 <div className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
-                    <h2>It's the Todo page!</h2>
+                    <h2>It's the Todo+Gifs page!</h2>
                 </div>
                 <p className="App-intro">
-                    This is another page in the app, with a todo list! It's mounted at
+                    This a Todo list, with GIFs for fun! It's mounted at
                 </p>
                 <pre>/todo</pre>
                 <h2>Todos to do!</h2>
-                <input type="text" value={todoToAdd} placeholder="Add a todo..."
+                <InputText value={todoToAdd} placeholder="Add a todo..." onEnter={this.addTodo}
                     onChange={e => this.setState({todoToAdd: e.target.value})} />
                 <button onClick={this.addTodo}>Add todo</button>
                 <ul>

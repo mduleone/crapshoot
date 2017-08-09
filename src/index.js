@@ -6,7 +6,7 @@ import injectTapEventPlugin from "react-tap-event-plugin";
 import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 
 import initializeStore from './config/store';
-import RoutingTable from './routes';
+import RoutingTable from './config/routes';
 import './index.css';
 
 injectTapEventPlugin();

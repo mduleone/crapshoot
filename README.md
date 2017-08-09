@@ -42,10 +42,10 @@ This comes with a lot of things baked in and in place already. There will eventu
 
 ### Prebuilt examples
 
-- Three different pages
-    - Default: `/`
-    - Todo+Gifs: `/todo`
-    - A route-not-defined fallback
+- Three different pages, in the [`src/pages`](./src/pages) directory
+    - Default Route: `/` in [`src/pages/app.js`](./src/pages/app.js)
+    - Todo+Gifs: `/todo` in [`src/pages/todo.js`](./src/pages/todo.js)
+    - A route-not-defined fallback in [`src/pages/not-found.js`](./src/pages/not-found.js)
 - A fully tested example Redux module that powers Todo+Gifs in [`src/modules/todo`](./src/modules/todo)
 - A sample empty module directory to demonstrate the structure in [`src/modules/_blank-module`](./src/modules/_blank-module)
 

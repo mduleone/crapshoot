@@ -2,7 +2,7 @@
 
 > Create React App Plus - Super Handy, Objectively Opinionated, Tasty!
 
-This is an opinionated approach to building a React/Redux Web Application, with an unejected instance of Create React App as its base. In addition to Redux, it comes with a bunch of goodies baked in!
+This is an opinionated approach to building a React/Redux Web Application, with an unejected instance of Create React App as its base. In addition to Redux, it comes with a bunch of other goodies baked in!
 
 ## So, I can just start building like this is Create React App?
 
@@ -25,4 +25,4 @@ This comes with a lot of things baked in and in place already. There will eventu
 
 ## License
 
-MIT
+[MIT](./LICENSE)

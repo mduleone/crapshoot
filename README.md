@@ -8,7 +8,7 @@ This is an opinionated approach to make starting a React/Redux Web Application, 
 
 It's Create React App, plus a few things in place already. You can get up and building very quickly. It's not a CLI tool like Create React App, but there's not much more to it. The below assumes you're using `yarn`, but you can use the corresponding `npm` commands instead.
 
-1. Fork this project
+1. Fork this project and check it out
 2. Run `yarn` to install the dependencies
 3. That's it! Run `yarn start` to start the development server and start building!
 

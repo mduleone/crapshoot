@@ -1,12 +1,20 @@
-# CRAPSHOOT
+# C.R.A.P.S.H.O.O.T.
 
 > Create React App Plus - Super Handy, Objectively Opinionated, Tasty!
 
-This is an opinionated approach to building a React/Redux Web Application, with an unejected instance of Create React App as its base. In addition to Redux, it comes with a bunch of other goodies baked in!
+This is an opinionated approach to building a React/Redux Web Application, with an unejected instance of [Create React App](https://github.com/facebookincubator/create-react-app) as its base. In addition to Redux, it comes with a bunch of other goodies baked in!
 
-## So, I can just start building like this is Create React App?
+## How does it work?
 
-That's right! At the heart of this is an unejected Create React App instance, you can refer to the [latest Create React App readme](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md) for how to use the Create React App built in scripts.
+You can get up and building very quickly. There's not much more to it than to Create React App, if you're familiar with it. The below assumes you're using `yarn`, but you can use the corresponding `npm` commands instead.
+
+1. Fork this project
+2. Run `yarn` to install the dependencies
+3. That's it! Run `yarn start` to start the development server to start building!
+
+## So, I can just start building like this is a Create React App project?
+
+That's right! At the heart of this is an unejected Create React App instance, you can refer to the [latest Create React App readme](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md) for how to use the built-in scripts.
 
 ## What's inside?
 

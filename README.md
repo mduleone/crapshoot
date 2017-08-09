@@ -2,7 +2,7 @@
 
 > Create React App Plus - Super Handy, Obviously Opinionated, Tasty!
 
-This is an opinionated approach to building a React/Redux Web Application, built on top of an unejected instance of [Create React App](https://github.com/facebookincubator/create-react-app). In addition to Redux, it comes with a bunch of other goodies baked in!
+This is an opinionated approach to make starting a React/Redux Web Application, built on top of an unejected instance of [Create React App](https://github.com/facebookincubator/create-react-app). In addition to Redux, it comes with a bunch of other goodies baked in!
 
 ## How does it work?
 
@@ -20,6 +20,8 @@ Yup! At the heart of this is an unejected Create React App instance, you can ref
 
 This comes with a lot of things baked in and in place already. There will eventually be a code-tour doc that explains what and where everything is to make getting up and running easier, but for now... what's baked in is below
 
+### Tools baked in
+
 - Redux
     - Modules follow a pattern similar to [Redux ducks](https://github.com/erikras/ducks-modular-redux), and each should have the same structure and be in its own directory inside [`src/modules`](./src/modules)
         - Actions live in `index.js`, exported individually
@@ -36,6 +38,9 @@ This comes with a lot of things baked in and in place already. There will eventu
     - Routes are mounted in [`src/index.js`](./src/index.js)
 - [Material UI](http://www.material-ui.com/#/)
     - Material UI is mounted in [`src/index.js`](./src/index.js)
+
+### Prebuilt examples
+
 - Three different pages
     - Default: `/`
     - Todo+Gifs: `/todo`

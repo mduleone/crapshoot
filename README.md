@@ -21,11 +21,11 @@ Yup! At the heart of this is an unejected Create React App instance, you can ref
 This comes with a lot of things baked in and in place already. There will eventually be a code-tour doc that explains what and where everything is to make getting up and running easier, but for now... what's baked in is below
 
 - Redux
-    - Modules follow a pattern similar to [Redux ducks](https://github.com/erikras/ducks-modular-redux), and should be in [`src/modules`](./src/modules)
-        - Actions in `index.js`, exported individually
-        - Sagas in `sagas.js`, exported as an array
-        - Selectors in `selectors.js`, exported individually
-        - Reducer in `reducer.js`, exported as default
+    - Modules follow a pattern similar to [Redux ducks](https://github.com/erikras/ducks-modular-redux), and each should have the same structure and be in its own directory inside [`src/modules`](./src/modules)
+        - Actions live in `index.js`, exported individually
+        - Sagas live in `sagas.js`, exported as an array of effects
+        - Selectors live in `selectors.js`, exported individually
+        - Reducer live in `reducer.js`, exported as default
     - Reducers are combined in [`src/config/reducers.js`](./src/config/reducers.js)
     - Reducers are mounted in [`src/config/store.js`](./src/config/store.js)
 - [Redux Saga](https://redux-saga.js.org/)
@@ -36,8 +36,11 @@ This comes with a lot of things baked in and in place already. There will eventu
     - Routes are mounted in [`src/index.js`](./src/index.js)
 - [Material UI](http://www.material-ui.com/#/)
     - Material UI is mounted in [`src/index.js`](./src/index.js)
-- Two different pages
-- A fully tested example Redux module that powers the Todo+Gifs page in [`src/modules/todo`](./src/modules/todo)
+- Three different pages
+    - Default: `/`
+    - Todo+Gifs: `/todo`
+    - A route-not-defined fallback
+- A fully tested example Redux module that powers Todo+Gifs in [`src/modules/todo`](./src/modules/todo)
 - A sample empty module directory to demonstrate the structure in [`src/modules/_blank-module`](./src/modules/_blank-module)
 
 ## License

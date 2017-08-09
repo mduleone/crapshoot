@@ -30,6 +30,7 @@ This comes with a lot of things baked in and in place already. There will eventu
         - Reducer live in `reducer.js`, exported as default
     - Reducers are combined in [`src/config/reducers.js`](./src/config/reducers.js)
     - Reducers are mounted in [`src/config/store.js`](./src/config/store.js)
+    - Store is initialized and mounted in [`src/index.js`](./src/index.js)
 - [Redux Saga](https://redux-saga.js.org/)
     - Sagas are combined in [`src/config/sagas.js`](./src/config/sagas.js)
     - Sagas are mounted in [`src/config/store.js`](./src/config/store.js)

@@ -24,7 +24,8 @@
     "react-router-redux": "^4.0.8",
     "react-tap-event-plugin": "^2.0.1",
     "redux": "^3.7.2",
-    "redux-saga": "^0.15.6"
+    "redux-saga": "^0.15.6",
+    "serve-favicon": "^2.4.3"
   },
   "homepage": "https://mduleone.github.io/crapshoot",
   "scripts": {

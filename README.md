@@ -39,7 +39,7 @@ This comes with a lot of things baked in and in place already. There will eventu
     - Routes are mounted in [`src/index.js`](./src/index.js)
 - [Material UI](http://www.material-ui.com/#/)
     - Material UI is mounted in [`src/index.js`](./src/index.js)
-- A simple [Express](https://expressjs.com/) server to make serving the app easy, necessary if using React Router with `BrowserHistory`
+- A simple [Express](https://expressjs.com/) server to make serving the app easy, necessary when using React Router with `BrowserHistory`
     - See [`server`](./server)
 
 ### Prebuilt examples
@@ -55,6 +55,25 @@ This comes with a lot of things baked in and in place already. There will eventu
         - Module: [`src/tests/modules/todo`](./src/tests/modules/todo)
         - API: [`src/tests/api/todo.test.js`](./src/tests/api/todo.test.js)
 - A sample empty module directory to demonstrate the structure in [`src/modules/_blank-module`](./src/modules/_blank-module)
+
+## Deploying
+
+Since this uses React Router with `BrowserHistory` by default, deploying this project is not as simple as deploying a standard Create React App straight out of the box. That is, it will still work if users navigate directly to the root of your app (by default, this is `/crapshoot`, see where the routes are mounted in [`src/index.js'](./src/index.js) and the `homepage` property in [`package.json`](./package.json) to update the root), but attempting to navigate to a route other than the root will not work without some form of server-side intervention.
+
+To that end, there is a simple Express server that handles this for us built in `server`, and we added `build:server` as a built-in script that handles moving the server and other necessary files to the `build` directory for us.
+
+### .env
+
+The server needs to read some values from the environment in order to properly build and serve things. Make sure to copy [`.env.dist`](./.env.dist) to a `.env` file, and to fill in the appropriate values.
+
+#### Tips and default/suggested values
+
+- `NODE_ENV`: If you're running this in production, set `NODE_ENV` to `production`
+- `PORT`: If no `PORT` is provided, the server defaults to port `3001`
+
+### Running the server
+
+On your host, now that you have appropriate environment variables in place and have successfully run `yarn build:server`, the `build` directory is ready to be deployed! Navigate into the `build` directory and run `node server` to get it started, and that's it! Navigate to `your-domain.com:PORT/your-root-route` to see your app. We recommend using [`forever`](https://github.com/foreverjs/forever) to keep your application running.
 
 ## License
 

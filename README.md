@@ -39,7 +39,7 @@ This comes with a lot of things baked in and in place already. There will eventu
     - Routes are mounted in [`src/index.js`](./src/index.js)
 - [Material UI](http://www.material-ui.com/#/)
     - Material UI is mounted in [`src/index.js`](./src/index.js)
-- A simple [Express](https://expressjs.com/) server to make serving the app easy, necessary if using React Router with `BrowserHistory` instead of `HashHistory`
+- A simple [Express](https://expressjs.com/) server to make serving the app easy, necessary if using React Router with `BrowserHistory`
     - See [`server`](./server)
 
 ### Prebuilt examples

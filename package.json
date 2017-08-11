@@ -1,12 +1,14 @@
 {
-  "name": "blank-cra-scaffold",
+  "name": "crapshoot",
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
     "react-scripts": "^1.0.11"
   },
   "dependencies": {
+    "body-parser": "^1.17.2",
     "classnames": "^2.2.5",
+    "express": "^4.15.4",
     "gh-pages": "^1.0.0",
     "isomorphic-fetch": "^2.2.1",
     "lodash": "^4.17.4",
@@ -24,12 +26,11 @@
     "redux": "^3.7.2",
     "redux-saga": "^0.15.6"
   },
-  "homepage": "https://mduleone.github.io/crapshoot",
+  "homepage": "https://dule.one",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build:server": "react-scripts build && cp -R ./server ./build && cp ./.env ./build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

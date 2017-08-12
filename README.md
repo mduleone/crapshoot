@@ -2,7 +2,7 @@
 
 > Create React App Plus - Super Handy, Obviously Opinionated, Tasty!
 
-This is an opinionated approach to make starting a React/Redux Web Application, built on top of an unejected instance of [Create React App](https://github.com/facebookincubator/create-react-app). In addition to Redux, it comes with a bunch of other goodies baked in!
+This is an opinionated approach to make starting a React/Redux Web Application easier, built on top of an unejected instance of [Create React App](https://github.com/facebookincubator/create-react-app). In addition to Redux, it comes with a bunch of other goodies baked in!
 
 ## How does it work?
 

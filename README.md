@@ -39,7 +39,7 @@ This comes with a lot of things baked in and in place already. There will eventu
     - Routes are mounted in [`src/index.js`](./src/index.js)
 - [Material UI](http://www.material-ui.com/#/)
     - Material UI is mounted in [`src/index.js`](./src/index.js)
-- A simple [Express](https://expressjs.com/) server to make serving the app easy, necessary when using React Router with `BrowserHistory`
+- A simple [Express](https://expressjs.com/) server to make serving the app easy when using React Router with `BrowserHistory`
     - See [`server`](./server)
 
 ### Prebuilt examples
@@ -58,7 +58,7 @@ This comes with a lot of things baked in and in place already. There will eventu
 
 ## Deploying
 
-Since this uses React Router with `BrowserHistory` by default, deploying this project is not as simple as deploying a standard Create React App straight out of the box. That is, it will still work if users navigate directly to the root of your app (by default, this is `/crapshoot`, see where the routes are mounted in [`src/index.js`](./src/index.js) and the `homepage` property in [`package.json`](./package.json) to update the root), but attempting to navigate to a route other than the root will not work without some form of server-side intervention.
+Because this uses React Router with `BrowserHistory` by default, deploying this project is not as simple as deploying a standard Create React App straight out of the box. That is, it will still work if users navigate directly to the root of your app (by default, this is `/crapshoot`, see where the routes are mounted in [`src/index.js`](./src/index.js) and the `homepage` property in [`package.json`](./package.json) to update the root), but attempting to navigate to a route other than the root will not work without some form of server-side intervention to always serve the proper files.
 
 To that end, there is a simple Express server that handles this for us built in `server`, and we added `build:server` as a built-in script that handles moving the server and other necessary files to the `build` directory for us.
 

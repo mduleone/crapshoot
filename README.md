@@ -64,7 +64,22 @@ This comes with a lot of things baked in and in place already. There will eventu
 
 Because this uses React Router with `BrowserHistory` by default, deploying this project is not as simple as deploying a standard Create React App straight out of the box. That is, it will still work if users navigate directly to the root of your app (by default, this is `/crapshoot`, see where the routes are mounted in [`src/index.js`](./src/index.js) and the `homepage` property in [`package.json`](./package.json) to update the root), but attempting to navigate to a route other than the root will not work without some form of server-side intervention to always serve the proper files.
 
-To that end, there is a simple Express server that handles this for us built in `server`, and we added `build:server` as a built-in script that handles moving the server and other necessary files to the `build` directory for us.
+To that end, there is a simple Express server that handles this for us built in `server`, and we updated the `build` script to handle moving the server and other necessary files to the `build` directory for us.
+
+```diff
+{
+  "scripts": {
+    "build-css": "node-sass-chokidar src/ -o src/",
+    "watch-css": "npm run build-css && node-sass-chokidar src/ -o src/ --watch --recursive",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+-   "build": "npm run build-css && react-scripts build",
++   "build": "npm run build-css && react-scripts build && cp -R ./server ./.env ./build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
+```
 
 ### .env
 
@@ -77,7 +92,7 @@ The server needs to read some values from the environment in order to properly b
 
 ### Running the server
 
-On your host, now that you have appropriate environment variables in place and have successfully run `yarn build:server`, the `build` directory is ready to be deployed! Navigate into the `build` directory and run `node server` to get it started, and that's it! Navigate to `your-domain.com:PORT/your-root-route` to see your app. We recommend using [`forever`](https://github.com/foreverjs/forever) to keep your application running.
+On your host, now that you have appropriate environment variables in place and have successfully run `yarn build`, the `build` directory is ready to be deployed! Navigate into the `build` directory and run `node server` to get it started, and that's it! Navigate to `your-domain.com:PORT/your-root-route` to see your app. We recommend using [`forever`](https://github.com/foreverjs/forever) to keep your application running.
 
 ## License
 

@@ -37,6 +37,7 @@ This comes with a lot of things baked in and in place already. There will eventu
 - [React Router](https://reacttraining.com/react-router/)
     - Routes are defined in [`src/config/routes.js`](./src/config/routes.js)
     - Routes are mounted in [`src/index.js`](./src/index.js)
+    - Uses `BrowserHistory`
 - [SASS](http://sass-lang.com/)
     - Add your styles in `.scss` files, and import them in to components from `.css` files with the same name in the same directory.
         - Check out how the [main page imports styles](./src/pages/app.js#L8)
@@ -44,7 +45,8 @@ This comes with a lot of things baked in and in place already. There will eventu
         - For more information on how this is accomplished, see [Facebook's guide to set it up](./CRA_README.md#adding-a-css-preprocessor-sass-less-etc)
 - [Material UI](http://www.material-ui.com/#/)
     - Material UI is mounted in [`src/index.js`](./src/index.js)
-- A simple [Express](https://expressjs.com/) server to make serving the app easy when using React Router with `BrowserHistory`
+- [Express](https://expressjs.com/)
+    - Because we are using React Router with `BrowserHistory`, we need to make sure to serve the right static files regardless of what path is used to access the app. We've built a simple server to handle this.
     - See [`server`](./server)
 
 ### Prebuilt examples

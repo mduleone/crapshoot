@@ -39,6 +39,7 @@ This comes with a lot of things baked in and in place already. There will eventu
     - Routes are mounted in [`src/index.js`](./src/index.js)
 - [SASS](http://sass-lang.com/)
     - Add your styles in `.scss` files, and import them in to components from `.css` files with the same name in the same directory.
+        - Check out how the [main page imports styles](https://github.com/mduleone/crapshoot/blob/master/src/pages/app.js#L8)
         - `.css` files are excluded from source control and auto-generated in the build process.
         - For more information on how this is accomplished, see [Facebook's guide to set it up](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#adding-a-css-preprocessor-sass-less-etc)
 - [Material UI](http://www.material-ui.com/#/)

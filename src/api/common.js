@@ -38,6 +38,8 @@ export function get(path, options = {}) {
         ...options,
         method: 'GET',
         headers: {
+            'accept': 'application/json',
+            'content-type': 'application/json',
             ...options.headers,
         },
     };

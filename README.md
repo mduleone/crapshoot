@@ -9,7 +9,7 @@ This is an opinionated approach to make starting a React/Redux Web Application e
 It's Create React App, plus a few things in place already. You can get up and building very quickly. It's not a CLI tool like Create React App, but there's not much more to it. The below assumes you're using `yarn`, but you can use the corresponding `npm` commands instead.
 
 1. Fork this project and check it out
-  a. Alternatively, follow [these instructions](https://help.github.com/articles/duplicating-a-repository/) to duplicate this repository to pick up where this left off, preserve the git history, and to start multiple projects with this as a base.
+  - Alternatively, follow [these instructions](https://help.github.com/articles/duplicating-a-repository/) to duplicate this repository to pick up where this left off, preserve the git history, and to start multiple projects with this as a base.
 2. Run `yarn` to install the dependencies
 3. That's it! Run `yarn start` to start the development server and start building!
 

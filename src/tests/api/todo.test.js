@@ -15,7 +15,7 @@ describe('getGiphy', () => {
 
         return api.getGiphy(text).then(() => {
             expect(commonApi.get)
-                .toHaveBeenCalledWith(`http://api.giphy.com/v1/gifs/translate?s=${encodeURIComponent(text)}&api_key=dc6zaTOxFJmzC`);
+                .toHaveBeenCalledWith(`//api.giphy.com/v1/gifs/translate?s=${encodeURIComponent(text)}&api_key=dc6zaTOxFJmzC`);
         });
     });
 

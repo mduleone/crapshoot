@@ -22,7 +22,7 @@ export default class Layout extends Component {
         return (
             <div id="app-container">
                 <AppBar title="Crapshoot Scaffolded App"
-                        onLeftIconButtonTouchTap={this.toggleMenu} />
+                        onLeftIconButtonClick={this.toggleMenu} />
                 <Drawer className="nav-bar"
                         docked={false}
                         width={200}

@@ -27,7 +27,8 @@
     "react-tap-event-plugin": "^3.0.2",
     "redux": "^3.7.2",
     "redux-saga": "^0.15.6",
-    "serve-favicon": "^2.4.3"
+    "serve-favicon": "^2.4.3",
+    "@snyk/protect": "latest"
   },
   "homepage": "https://mduleone.github.io/crapshoot",
   "scripts": {
@@ -37,6 +38,9 @@
     "start": "npm-run-all -p watch-css start-js",
     "build": "npm run build-css && react-scripts build && cp -R ./server ./.env ./build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
-  }
+    "eject": "react-scripts eject",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true
 }

@@ -2,6 +2,11 @@
 # yarn lockfile v1
 
 
+"@snyk/protect@^1.1208.0":
+  version "1.1208.0"
+  resolved "https://registry.yarnpkg.com/@snyk/protect/-/protect-1.1208.0.tgz#5789de12b89630bf3d598b9b9910a8a9fb863d61"
+  integrity sha512-OAvVLx2yemEncXzsbtDWIeg3r7DS/XFilHix4DuqUjl0yEjdyM+rU/ua5Fffmw92Aep+lr+cYv5Du3mzF4B20A==
+
 abab@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
